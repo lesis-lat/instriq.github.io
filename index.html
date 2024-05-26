@@ -13,8 +13,13 @@
         <meta property="og:image" content="">
         <link href="https://fonts.cdnfonts.com/css/rasputin" rel="stylesheet">
         <style>
+            
             body {
                 font-family: 'Rasputin', sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-weight: lighter;
+                text-rendering: optimizeLegibility; 
                 text-align: justify;
                 margin-left: 15%;
                 background: #f0f0f0;
@@ -58,11 +63,11 @@
                 width: 40em;
                 display: block;
                 margin-right: 35px; 
-           }
+            }
 
            .item h3 {
                 text-align: center;
-           }
+            }
 
            .btn {
                 display: inline-block;
@@ -71,7 +76,7 @@
                 border-block-color: #000000;
                 border-inline-color: #000000;
                 border-radius: 5px;
-                background-color: #D6FFA7; /* Cor de fundo com 0% de opacidade */
+                background-color: #D6FFA7;
                 text-align: center;
                 text-decoration: none;
                 font-size: 16px;
@@ -85,6 +90,17 @@
 
             .btn:active {
                 background-color: #9ed65e;
+            }
+
+            @media (max-width: 768px) {
+                #services {
+                    flex-direction: column;
+                }
+
+                .item {
+                    width: 100%;
+                }
+
             }
         </style>
     </head>
@@ -118,6 +134,14 @@
             </div>
             <div class="item">
                 <h3>RESEARCH & DEVELOPMENT</h3>
+                <h4>
+                    Hard problems require unique solutions. We create tailor made tools for optimizing your operation, providing exclusive capabilities
+                    and tailored on-demand research to improve exploitation and post-exploitation tasks.
+                    From high level design to low-level implementation. In the past years our engineer are worked on advecend projects around topics like: static analysis, fuzzing, data mining and other. 
+                </h4>
+            </div>
+            <div class="item">
+                <h3>INTELLIGENCE</h3>
                 <h4>
                     Hard problems require unique solutions. We create tailor made tools for optimizing your operation, providing exclusive capabilities
                     and tailored on-demand research to improve exploitation and post-exploitation tasks.
