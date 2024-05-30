@@ -11,107 +11,7 @@
         <meta property="og:title" content="LESIS - Laboratory of Engineering Studies in Information Security" />
         <meta property="og:description" content="We are an applied security research firm, focused on developing effective offensive technology to support critical operations" />
         <meta property="og:image" content="https://lesis.lat/assets/images/banner.jpeg">
-        <link href="" rel="stylesheet">
-        <style>
-            @font-face {
-                font-family: 'Rasputin';
-                src: url('https://lesis.lat/assets/fonts/Rasputin-Light.woff2') format('woff2');
-                font-weight: normal;
-                font-style: normal;
-            }
-            body {
-                font-family: 'Rasputin', sans-serif;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                font-weight: lighter;
-                text-rendering: optimizeLegibility; 
-                text-align: justify;
-                margin-left: 10%;
-                background: #f0f0f0;
-            }
-
-            .circle {
-                width: 100vw;
-                height: 100vh;
-                background: radial-gradient(circle, #9ed65e, rgba(158, 214, 94, 0) 65%);
-            }
-
-            h1 {
-                font-size: 1.8em;
-            }
-
-            nav {
-                margin-bottom: 5em;
-                margin-top: 5em;
-            }
-
-            button, a {
-                color: #000000;
-            }
-
-            a:hover {
-                color: #9ed65e;
-                transition: 1s;
-            }
-
-            #header, #services, footer {
-                width: 80%;
-                margin-bottom: 5em;
-                margin-top: 5em;
-            }
-
-            #services {
-                display: flex;
-            }
-
-           .item {
-                width: 65em;
-                display: block;
-                margin-right: 35px; 
-            }
-
-           .item h3 {
-                text-align: center;
-            }
-
-           .btn {
-                display: inline-block;
-                padding: 10px 20px;
-                border: none;
-                border-block-color: #000000;
-                border-inline-color: #000000;
-                border-radius: 5px;
-                background-color: #D6FFA7;
-                text-align: center;
-                text-decoration: none;
-                font-size: 0.8em;
-                cursor: pointer;
-                transition: background-color 0.3s;
-            }
-
-            .btn:hover {
-                background-color: #9ed65e;
-            }
-
-            .btn:active {
-                background-color: #9ed65e;
-            }
-
-            @media (max-width: 900px) {
-                #services {
-                    flex-direction: column;
-                }
-
-                .item {
-                    width: 100%;
-                }
-
-                .circle {
-                    background: radial-gradient(circle, #9ed65e, rgba(158, 214, 94, 0) 45%);
-                }
-
-            }
-        </style>
+        <link href="assets/css/style.css" rel="stylesheet">
     </head>
     <body class="circle">
         <nav>
@@ -160,10 +60,5 @@
             </center>
         </footer>
     </body>
-    <script>
-        var host="lesis.lat"
-        if (window.location.host == host && window.location.protocol != "https:") {
-            window.location.protocol = "https:"
-        }
-    </script>
+    <script src="assets/scripts/main.js"></script>
 </html>
