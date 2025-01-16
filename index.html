@@ -22,12 +22,19 @@
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
     <body class="circle">
+        <nav>
+            <a class="ibm-plex-sans-regular" href="#">
+                <img src="assets/images/logo-black.png" alt="LESIS logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="https://blog.lesis.lat" target="_blank">BLOG</a></li>
+                <li><a href="#contact" id="contactLink">CONTACT</a></li>
+            </ul>
+        </nav>
         <section id="header">
-            <nav>
-                <a class="ibm-plex-sans-regular" href="#">
-                    <img src="assets/images/logo-black.png" alt="LESIS logo" class="logo">
-                </a>
-            </nav>
             <h2 class="ibm-plex-sans-light">
                 <p>
                     We are an <b>applied security research firm</b>, focused on <b>developing effective offensive technology</b> to support critical operations.
@@ -39,27 +46,51 @@
                     Click here to contact us via email: business@lesis.lat
                 </button>
             </h3>
+            <a href="#services">
+                <div class="down-arrow"></div>
+            </a>
         </section>
+        <hr/>
         <section id="services">
-            <div class="item">
-                <h3 class="ibm-plex-sans-regular">VULNERABILITY RESEARCH</h3>
-                <h4 class="ibm-plex-sans-light">
-                    A detailed analysis of the attack surface of the product under test, taking into consideration the security expectations, objectives and threat model. 
-                    In general, our approach of vulnerability research aims to verify the resilience of all components of the product under test 
-                    - typically, this service is composed of architecture review, supporting infrastructure testing, application security, code 
-                    review and reverse engineering, as well as the creation of bespoke tools such as fuzzers and custom code static analyzers.
-                </h4>
-            </div>
-            <div class="item">
-                <h3 class="ibm-plex-sans-regular">RESEARCH & DEVELOPMENT</h3>
-                <h4 class="ibm-plex-sans-light">
-                    Hard problems require unique solutions. We create tailor made tools for optimizing your operation, providing exclusive capabilities
-                    and tailored on-demand research to improve exploitation and post-exploitation tasks.
-                    From high level design to low-level implementation. In the past years our engineer are worked on advanced projects around topics like: static analysis, fuzzing, data mining and other. 
-                </h4>
+            <h2 class="ibm-plex-sans-regular">DISCOVER MORE ABOUT OUR SERVICES</h2>
+            <div id="items">
+                <div class="item">
+                    <h3 class="ibm-plex-sans-regular">VULNERABILITY RESEARCH</h3>
+                    <h4 class="ibm-plex-sans-light">
+                        A detailed analysis of the attack surface of the product under test, taking into consideration the security expectations, objectives and threat model. 
+                        In general, our approach of vulnerability research aims to verify the resilience of all components of the product under test 
+                        - typically, this service is composed of architecture review, supporting infrastructure testing, application security, code 
+                        review and reverse engineering, as well as the creation of bespoke tools such as fuzzers and custom code static analyzers.
+                    </h4>
+                </div>
+                <div class="item">
+                    <h3 class="ibm-plex-sans-regular">RESEARCH & DEVELOPMENT</h3>
+                    <h4 class="ibm-plex-sans-light">
+                        Hard problems require unique solutions. We create tailor made tools for optimizing your operation, providing exclusive capabilities
+                        and tailored on-demand research to improve exploitation and post-exploitation tasks.
+                        From high level design to low-level implementation. In the past years our engineer are worked on advanced projects around topics like: static analysis, fuzzing, data mining and other. 
+                    </h4>
+                </div>
             </div>
             </div>
         </section>
+        <hr/>
+        <section id="about">
+            <h2 class="ibm-plex-sans-regular">KNOW MORE ABOUT OUR HISTORY AND VALUES</h2>
+            <h3 class="ibm-plex-sans-light">
+                <p>
+                    At LESIS (Laboratory of Engineering Studies in Information Security), we specialize in applied research focused on offensive security technologies that support critical operations. Our team of experienced engineers and researchers is dedicated to identifying vulnerabilities, developing innovative solutions, and enhancing the security posture of organizations facing complex cybersecurity challenges.
+                </p>
+                <p>
+                    With a deep understanding of the tactics, techniques, and procedures (TTPs) used by attackers, we offer a unique perspective on securing systems and infrastructures. 
+                    We work closely with our clients, tailoring solutions to meet their specific needs and objectives. Whether through vulnerability research, advanced exploitation techniques, or the creation of bespoke tools for security assessments, our goal is to enhance the resilience of our clients' systems while empowering them to stay ahead of emerging threats.
+                </p>
+                <p>
+                    Our commitment is to deliver world-class research, cutting-edge technology, and actionable insights that contribute to a more secure digital world. At LESIS, we don't just assess security; we advance it.
+                </p>
+            </h3>
+        </section>
+        <hr/>
         <div id="contactModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>

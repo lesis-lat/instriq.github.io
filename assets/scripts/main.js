@@ -21,3 +21,10 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+var contactLink = document.getElementById("contactLink");
+
+contactLink.onclick = function (e) {
+    e.preventDefault();
+    modal.style.display = "block";
+}
