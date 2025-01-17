@@ -28,3 +28,11 @@ contactLink.onclick = function (e) {
     e.preventDefault();
     modal.style.display = "block";
 }
+
+
+const hamburger = document.getElementById('hamburgerIcon');
+const menu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', function() {
+    menu.classList.toggle('show');
+});
