@@ -29,7 +29,12 @@ body {
 .logo {
     width: 65px;
     height: auto;
+    position: fixed;
+    top: 3em;
+    left: 5%;
+    z-index: 1000;
 }
+
 
 .ibm-plex-sans-regular {
     font-family: "IBM Plex Sans", serif;
@@ -59,7 +64,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 2em auto;
+    margin: 3em auto;
     padding: 0 10px;
 }
 
