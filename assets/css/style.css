@@ -31,7 +31,7 @@ body {
     height: auto;
     position: fixed;
     top: 3em;
-    left: 5%;
+    left: 8%;
     z-index: 1000;
 }
 
@@ -63,7 +63,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 3em auto;
+    margin: 5em auto;
     padding: 0 10px;
 }
 
@@ -121,7 +121,7 @@ a:hover {
 }
 
 #header {
-    margin-bottom: 10em;
+    margin-bottom: 15em;
     margin-top: 10em;
 }
 
