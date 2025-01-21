@@ -386,3 +386,15 @@ footer {
         display: none; /* Esconde o ícone da seta para baixo em telas menores que 900px */
     }
 }
+
+.hamburger.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Primeira linha */
+}
+
+.hamburger.open .line:nth-child(2) {
+    opacity: 0; /* Oculta a linha do meio */
+}
+
+.hamburger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Terceira linha */
+}
