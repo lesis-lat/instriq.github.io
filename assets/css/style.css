@@ -364,3 +364,9 @@ footer {
         display: flex;
     }
 }
+
+@media (max-width: 360px) {
+    .down-arrow {
+        top: calc(80vh - 15px);
+    }
+}
