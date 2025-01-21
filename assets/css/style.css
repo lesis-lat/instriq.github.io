@@ -201,17 +201,9 @@ footer {
     #services, #about, footer {
         width: 100%;
     }
-
-    .down-arrow {
-        top: calc(80vh - 80px);
-    }
 }
 
 @media (max-width: 600px) {
-    .down-arrow {
-        top: calc(70vh - 60px);
-    }
-
     .circle {
         background: radial-gradient(circle, #9ed65e, rgba(158, 214, 94, 0) 35%);
     }
@@ -365,8 +357,53 @@ footer {
     }
 }
 
-@media (max-width: 360px) {
+.down-arrow {
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 2s infinite;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
+.down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 900px) {
     .down-arrow {
-        top: calc(80vh - 15px);
+        top: calc(80vh - 80px); /* Ajusta a posição para telas médias */
+    }
+}
+
+@media (max-width: 600px) {
+    .down-arrow {
+        top: calc(70vh - 60px); /* Ajusta a posição para telas pequenas */
+    }
+}
+
+/* Responsividade adicional para garantir que o ícone funcione bem em telas muito pequenas */
+@media (max-width: 400px) {
+    .down-arrow {
+        top: calc(65vh - 50px); /* Ajuste adicional para telas muito pequenas */
+    }
+
+    .down-arrow:after {
+        width: 12px;
+        height: 12px; /* Reduz o tamanho do ícone */
+        top: 8px; /* Ajusta para o novo tamanho */
+        left: -8px; /* Ajusta para o novo tamanho */
     }
 }
