@@ -115,7 +115,7 @@ a:hover {
     transition: 1s;
 }
 
-#header, #services, #about, footer {
+#header, #research, #about, footer {
     margin: 0 auto;
     width: 80%;
 }
@@ -125,7 +125,7 @@ a:hover {
     margin-top: 10em;
 }
 
-#services, #about, footer {
+#research, #about, footer {
     margin-bottom: 5em;
     margin-top: 5em;
 }
@@ -198,7 +198,7 @@ footer {
         margin-top: 5em;
     }
 
-    #services, #about, footer {
+    #research, #about, footer {
         width: 100%;
     }
 }
